@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Práctica 6b CSS</title>
+	<style>
+		[data-cantidad]{
+			font-size:20px;
+			font-family: perpetua;
+		}
+		[data-ing]{
+			text-transform: uppercase;
+		}
+		[data-ing="salado"]{
+			text-transform: none;
+			color: red;
+		}
+		[data-aceite]{
+			color: gold;
+		}
+		ol li{
+			padding:5px;
+			font-size:20px;
+		}
+		input[type="submit"]{
+			margin-left:70px;
+		}
+		hr { 
+			  border: 0; 
+			  height: 1px; 
+			  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+			  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+		}
+		div{
+			text-align: center;
+		}
+	</style>
+  </head>
+  <body>
+    <p><h1><i>Tortilla de patatas para 6 personas</i></h1></p>
+	<p>Ingredientes:</p>
+	<ul>
+	  <li data-cantidad="10" data-ing>Huevos</li>
+	  <li data-cantidad="1" data-ing>Cebolla</li>
+	  <li data-cantidad="1kg" data-ing>Patatas</li>
+	  <li data-cantidad="al gusto" data-ing="salado">Sal</li>
+	  <li data-cantidad="" data-aceite>Aceite</li>
+	</ul>
+	<hr>
+	<p>Preparación:</p>
+	<ol>
+		<li>Pelamos las patatas, las lavamos para quitar restos de suciedad y muy importante, las secamos.</li>
+		<li>Cortamos en láminas semifinas, a mí no me gusta que se deshagan sino que al freírlas se tuesten un poco. Las colocamos en un bol grande, donde luego vamos a mezclar con el huevo y añadimos sal al gusto. Removemos bien y reservamos.</li>
+		<li>Elegimos nuestra sartén más grande y antiadherente. La ponemos al fuego y añadimos un buen aceite de oliva virgen extra.</li>
+		<li>No tengáis miedo en gastaros un poco de dinero en aceite, le va a dar ese punto de sabor que distingue vuestra tortilla de las demás, podéis emplear muchas variedades: arbequina, picual, cornicabra, hojiblanca, royal… el que más os guste, pero de calidad.</li>
+		<li>Introducimos las patatas cortadas y ya saladas y dejamos que se cocinen durante aproximadamente veinte minutos a fuego bajo.</li>
+		<li>El tema del grosor de las patatas también va a gustos. Hay quien prefiere cortarlas a trozos muy pequeños, en láminas muy finas que casi se rompan al freír y o más bien grandes.</li>
+		<li>Mientras se están friendo las patatas, en el bol donde luego vamos a echar las patatas batimos los huevos, reservamos.</li>
+		<li>Pelamos la cebolla y cortamos lo más fino posible.</li>
+		<li>En otra sartén calentamos aceite de oliva y añadimos los trozos de cebolla.</li>
+		<li>Pochamos hasta que tenga un color dorado, que tenga un punto de caramelización pero sin llegar a quemarse. La cebolla se hará antes que las patatas, así que escurrimos y añadimos al bol con el huevo batido.</li>
+	</ol>
+	<hr>
+	<div>
+		<h1>¿Alguna sugerencia?</h1>
+		<form>
+			<p>
+				<label for="nombre">Nombre: </label>
+				<input type="text" name="nombre">
+			</p>
+			<p>
+				<label for="mail">Email: </label>
+				<input type="email" name="mail">
+			</p>
+			<p>
+				<label for="comentario">Comentarios: </label>
+				<textarea name="comentario" cols="30" rows="8"></textarea>
+			</p>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+  </body>
+</html>
